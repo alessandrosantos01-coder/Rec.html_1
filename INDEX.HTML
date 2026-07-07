@@ -1,0 +1,182 @@
++-----------------------------------------------------------------------+
+|  <head> (Configurações internas, título da aba e vínculo com o CSS)  |
++-----------------------------------------------------------------------+
+|  <body> (Conteúdo visível da página)                                  |
+|                                                                       |
+|  +-----------------------------------------------------------------+  |
+|  | <div> [Cabeçalho / Header]                                      |  |
+|  |    <h1> Título Principal: Empatia e Cooperação                  |  |
+|  +-----------------------------------------------------------------+  |
+|                                                                       |
+|  +-----------------------------------------------------------------+  |
+|  | <div> [Seção 1: O que é Empatia?]                               |  |
+|  |    <p> Texto explicando o conceito de empatia.                  |  |
+|  +-----------------------------------------------------------------+  |
+|                                                                       |
+|  +-----------------------------------------------------------------+  |
+|  | <div> [Seção 2: O que é Cooperação?]                            |  |
+|  |    <p> Texto explicando o conceito de cooperação.               |  |
+|  +-----------------------------------------------------------------+  |
+|                                                                       |
+|  +-----------------------------------------------------------------+  |
+|  | <div> [Seção 3: Exemplos Práticos]                              |  |
+|  |    <p> Como praticar no dia a dia:                              |  |
+|  |    <ul>                                                         |  |
+|  |       <li> Item 1: Ouvir com atenção sem julgar.                |  |
+|  |       <li> Item 2: Ajudar em tarefas coletivas.                 |  |
+|  |       <li> Item 3: Compartilhar conhecimento.                   |  |
+|  |    </ul>                                                        |  |
+|  +-----------------------------------------------------------------+  |
+|                                                                       |
+|  +-----------------------------------------------------------------+  |
+|  | <div> [Rodapé / Links Úteis]                                    |  |
+|  |    <a> Saiba mais sobre o tema (Link)                           |  |
+|  +-----------------------------------------------------------------+  |
+|                                                                       |
++-----------------------------------------------------------------------+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empatia e Cooperação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>A Importância da Empatia e da Cooperação</h1>
+        </div>
+
+        <div class="card">
+            <p><strong>Empatia</strong> é a capacidade de se colocar no lugar do outro, buscando compreender seus sentimentos, perspectivas e emoções. É o pilar fundamental para a construção de relações humanas saudáveis e respeitosas.</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Cooperação</strong> é a ação conjunta de apoiar e trabalhar com outras pessoas para alcançar um objetivo comum. Quando colaboramos, transformamos desafios individuais em conquistas coletivas.</p>
+        </div>
+
+        <div class="card list-section">
+            <p>Como podemos aplicar esses valores no nosso dia a dia?</p>
+            <ul>
+                <li>Praticar a escuta ativa, ouvindo as pessoas sem interrupções ou julgamentos prematuros.</li>
+                <li>Oferecer ajuda espontânea a colegas, amigos ou familiares em tarefas cotidianas.</li>
+                <li>Trabalhar em equipe valorizando e respeitando a opinião de todos os integrantes.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Quer entender mais sobre o assunto?</p>
+            <a href="https://pt.wikipedia.org/wiki/Empatia" target="_blank">Saiba mais sobre Empatia</a>
+            <a href="https://pt.wikipedia.org/wiki/Coopera%C3%A7%C3%A3o" target="_blank">Saiba mais sobre Cooperação</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+/* Configurações gerais e reset básico de margens */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal para estruturar a página no centro */
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do cabeçalho */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #5ca4a9;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #5ca4a9;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Estilização dos blocos de conteúdo (divs) */
+.card {
+    background-color: #f9fbfb;
+    border-left: 4px solid #f7b731;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Estilização da seção de listas */
+.list-section {
+    border-left-color: #4b6584;
+}
+
+.list-section p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Estilização dos links e rodapé */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    color: #777777;
+}
+
+a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #5ca4a9;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+a:hover {
+    background-color: #3d6e71;
+}
